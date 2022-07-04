@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA","sources":["src/css/style.css"],"sourcesContent":[".header {\n    background-color: rgb(182, 49, 31);\n}\n\n.banner__submit {\n    background-color: darkgray;\n    border: 8px ridge wheat;\n    \n}"],"names":[],"version":3,"file":"index.c92073ef.css.map","sourceRoot":"/__parcel_source_root/"}

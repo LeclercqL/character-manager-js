@@ -1,0 +1,14 @@
+//Abstracts
+@import "abstracts/variables";
+
+//Vendors";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons";
+@import "vendors/tinymce";
+
+//Layout
+@import "layout/header";
+@import "layout/layout";
+
+//Components
+@import "components/cards";
