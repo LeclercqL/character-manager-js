@@ -5,7 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url /"
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
