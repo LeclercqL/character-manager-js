@@ -82,9 +82,9 @@ const getCharacters = async (search,type) => {
             cards.appendChild(article);
 
             document.querySelector(`.js-open-detail[data-id="${idChar}"]`).addEventListener('click', () => {
-                const state = { 'page': 'view', 'id' : idChar }
+                /*const state = { 'page': 'view', 'id' : idChar }
                 const url = 'view';
-                history.replaceState(state, '', url);
+                history.pushState(state, '', url);*/
                 
                 viewCharacter(idChar);
             });
@@ -352,9 +352,9 @@ const initBackToList = () => {
     const backList = document.querySelectorAll('.js-back-list');
     backList.forEach((item) => {
         item.addEventListener('click', () => {
-            const state = { 'page': 'list' }
+            /*const state = { 'page': 'list' }
             const url = ''
-            history.replaceState(state, '', url);
+            history.pushState(state, '', url);*/
             viewCharacterList();
         });
     });
@@ -375,9 +375,9 @@ const initSaveForm = () => {
 
 
 document.querySelector('#js-add-char').addEventListener('click', () => {
-    const state = { 'page': 'add' }
+    /*const state = { 'page': 'add' }
     const url = 'add'
-    history.replaceState(state, '', url);
+    history.pushState(state, '', url);*/
 
     viewCharacterForm();
 });
@@ -386,7 +386,7 @@ document.forms['form-search'].addEventListener('submit', (e) => {
     searchChar(e);
 });
 
-
+/* TODO : Historique a terminer
 window.onpopstate = history.onpushstate = function(e) { 
     if(history.state != null)  { 
         switch(history.state.page) {
@@ -401,7 +401,6 @@ window.onpopstate = history.onpushstate = function(e) {
         }
     }
 }
-/* TODO : Historique a terminer
 window.onload = function() { 
     if(history.state != null)  { 
         switch(history.state.page) {
